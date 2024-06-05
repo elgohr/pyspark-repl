@@ -1,0 +1,15 @@
+modules = ["python-3.10", "nix"]
+run = "pytest"
+entrypoint = "report.py"
+
+[nix]
+channel = "stable-23_11"
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[deployment]
+run = ["pytest"]
